@@ -1,6 +1,7 @@
 theFile = open("AdventOfCode2025/dayOne.txt","r")
 fileLines = theFile.readlines()
 theVal = 50
+zeroCount = 0
 count = 0
 
 for line in fileLines:
@@ -18,8 +19,11 @@ for line in fileLines:
         theVal = theVal % 100
         if theVal == 0:
             count += 1
+            
+    if theVal == 0:
+        zeroCount += 1
     
     
-print(theVal, count)
+print(theVal, zeroCount, count)
 
 
