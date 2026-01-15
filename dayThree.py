@@ -1,6 +1,8 @@
-theFile = open("AdventOfCode2025/dayThree.txt","r")
+theFile = open("dayThree.txt","r")
 fileLines = theFile.readlines()
 total = 0
+
+# Part 1
 
 for line in fileLines:
     line = line.strip("\n")
@@ -26,6 +28,8 @@ for line in fileLines:
     total += num
 print(total)
 
+
+# Part 2
 
 total = 0
 

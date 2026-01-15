@@ -1,12 +1,14 @@
 import re
 
-theFile = open("AdventOfCode2025/dayTwo.txt","r")
+theFile = open("dayTwo.txt","r")
 fileLine = theFile.readline()
 theLines = fileLine.split(",")
 total = 0
 found = []
 
 pattern = r'^\d+${2}'
+
+# Part 1
 
 for line in theLines:
     theVals = line.split("-")
@@ -18,7 +20,8 @@ for line in theLines:
                 found.append(i)
                 
 print(total)
-#print(found)
+
+# Part 2
 
 foundVals = []
 totalVal = 0
@@ -32,4 +35,3 @@ for line in theLines:
             foundVals.append(i)
           
 print(totalVal)
-#print(foundVals)

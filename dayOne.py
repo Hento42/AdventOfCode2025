@@ -1,4 +1,4 @@
-theFile = open("AdventOfCode2025/dayOne.txt","r")
+theFile = open("dayOne.txt","r")
 fileLines = theFile.readlines()
 theVal = 50
 zeroCount = 0
